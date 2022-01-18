@@ -15,13 +15,11 @@ let package = Package(
             dependencies: [
               "Segment",
               .product(name: "FirebaseAnalytics", package: "Firebase"),
-              .product(name: "FirebaseCrashlytics", package: "Firebase")
+              .product(name: "FirebaseCrashlytics", package: "Firebase"),
+              .product(name: "FirebasePerformance", package: "Firebase")
             ],
             path: "Segment-Firebase/Classes",
-            publicHeadersPath: ".",
-            cSettings: [
-                .headerSearchPath(".")
-            ]
+            publicHeadersPath: ""
         )
     ]
 )
